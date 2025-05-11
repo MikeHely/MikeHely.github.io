@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MyKJ | Início</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div id="preloader">
+  <div class="loader">MyKJ</div>
+</div>
+
+  <header>
+    <button class="menu-toggle" id="menu-toggle">☰</button>
+    <button id="toggle-dark">🌙</button>
+    <div class="container">
+      <h1 class="logoo">MyKJ</h1>
+      <nav class="nav-mobile" id="nav-mobile">
+  <ul class="nav-links">
+    <li><a href="#inicio">Início</a></li>
+    <li><a href="#sobre">Sobre</a></li>
+    <li><a href="#projetos">Projetos</a></li>
+    <li><a href="#contato">Contato</a></li>
+  </ul>
+</nav>
+
+    </div>
+  </header>
+
+  <section class="hero" id="inicio">
+    <div class="hero-content">
+      <h2>Olá! Eu sou o KJ 👋</h2>
+      <p>Desenvolvo ideias, projetos e soluções criativas. Vamos construir algo juntos?</p>
+      <a href="#projetos" class="btn">Ver Projetos</a>
+    </div>
+  </section>
+
+    <section id="sobre" class="sobre-section">
+      <div class="container">
+        <h2>Sobre Mim</h2>
+        <div class="conteudo">
+          <img src="images/perfil.jpg" alt="Minha foto" class="foto-perfil" />
+          <div class="texto">
+            <p>Olá! Me chamo <strong>Mike</strong> e sou apaixonado por tecnologia, design e empreendedorismo.</p>
+            <p>Criei o <strong>MyKJ</strong> para apresentar meus projetos e oferecer soluções criativas e funcionais aos meus clientes.</p>
+            <p>Atualmente estou desenvolvendo sites, estudando novas tecnologias e buscando sempre evoluir.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+<section id="projetos" class="projetos animado">
+  <div class="container">
+    <h2>Meus Projetos</h2>
+    <div class="filtros">
+  <button class="btn-filtro ativo" data-filtro="todos">Todos</button>
+  <button class="btn-filtro" data-filtro="web">Web</button>
+  <button class="btn-filtro" data-filtro="design">Design</button>
+  <button class="btn-filtro" data-filtro="app">App</button>
+</div>
+
+    <div class="grid-projetos">
+      <div class="card web">
+        <img src="img/projeto1.png" alt="Projeto 1">
+        <h3>Landing Page</h3>
+        <p>Site moderno focado em conversão.</p>
+        <a href="projetos.html" target="_blank">Ver Mais</a>
+        <div class="card web">
+  <!-- conteúdo do projeto web -->
+</div>
+      </div>
+      <div class="card design">
+        <img src="img/projeto2.png" alt="Projeto 2">
+        <h3>Loja Online</h3>
+        <p>E-commerce completo com carrinho.</p>
+        <a href="projetos.html" target="_blank">Ver Mais</a>
+        <div class="card design">
+  <!-- conteúdo do projeto design -->
+</div>
+      </div>
+      <div class="card app">
+        <img src="img/projeto3.png" alt="Projeto 3">
+        <h3>Blog Pessoal</h3>
+        <p>Blog leve e estilizado com CMS.</p>
+        <a href="projetos.html" target="_blank">Ver Mais</a>
+        <div class="card app">
+  <!-- conteúdo do projeto app -->
+</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contato" class="contato animado">
+  <div class="container">
+    <h2><a href="contato.html">Entre em Contato</a></h2>
+    <form id="contact-form">
+      <input type="text" id="name" placeholder="Seu nome" required>
+      <input type="email" id="email" placeholder="Seu email" required>
+      <textarea id="message" placeholder="Sua mensagem" required></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+  </div>
+</section>
+
+
+
+    
+
+  <footer>
+    <p>© 2025 MyKJ. Todos os direitos reservados.</p>
+  </footer>
+<button id="voltar-topo" title="Voltar ao topo">↑</button>
+ <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script>
+  emailjs.init("d3x-6H8k5l7CNCiy4");
+</script>
+
+<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script>
+  (function() {
+    emailjs.init("d3x-6H8k5l7CNCiy4"); // Substitui com tua Public Key
+  })();
+</script>
+
+
+<script src="js/script.js"></script>
+
+ 
+ </body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contato | MyKJ</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+       <div class="logo"><a href="index.html">MyKJ</a></div>
+       <ul class="nav-links">
+          <li><a href="index.html">Início</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="projetos.html">Projetos</a></li>
+          <li><a href="galeria.html">Galeria</a></li>
+          <li><a href="contato.html">Contato</a></li>
+       </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="contato">
+      <h1>Fale Comigo</h1>
+      <form id="contact-form">
+        <input type="text" id="name" placeholder="Seu nome" required>
+        <input type="email" id="email" placeholder="Seu email" required>
+        <textarea id="message" placeholder="Sua mensagem" required></textarea>
+        <button type="submit">Enviar</button>
+      </form>
+      
+      <p id="form-msg"></p>
+      
+
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 MyKJ. Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <script>
+    (function() {
+      emailjs.init("6H8k5l7CNCiy4"); // Substitui com tua Public Key
+    })();
+  </script>
+  
+
+</body>
+</html>
